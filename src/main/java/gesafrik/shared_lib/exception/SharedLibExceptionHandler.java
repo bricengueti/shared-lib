@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestControllerAdvice
-public class GlobalExceptionHandler {
+public class SharedLibExceptionHandler {  // 👈 Renommé
 
     @ExceptionHandler(PermissionDeniedException.class)
     public ResponseEntity<Map<String, Object>> handlePermissionDenied(PermissionDeniedException ex) {
